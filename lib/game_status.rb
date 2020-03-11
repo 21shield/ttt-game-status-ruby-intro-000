@@ -31,4 +31,10 @@ def full?(board)
    current_player == "X" || current_player == "O"
   end
  end
- 
+
+ def draw?(board)
+   if won?(board) == false && full?(board)== true
+     return true
+   end
+   return false
+ end
