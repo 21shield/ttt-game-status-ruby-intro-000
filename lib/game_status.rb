@@ -47,5 +47,3 @@ def over? (board)
   end
   return false
 end
-
-
