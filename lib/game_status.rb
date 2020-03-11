@@ -15,10 +15,10 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 def won?(board)
-WIN_COMBINATIONS.each do |winning_array|
-  if board[winning_array[0]] == 'X' && board[winning_array[1]]== 'X' && board[winning_array[2]] == "X"
-    return winning_array
-  else
-    return  false
-    end
+  WIN_COMBINATIONS.each do |winning_array|
+    if board[winning_array[0]] == 'X' && board[winning_array[1]]== 'X' && board[winning_array[2]] == "X"
+      return winning_array
+    else
+      return  false
+  end
 end
