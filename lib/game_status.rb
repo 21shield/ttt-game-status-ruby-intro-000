@@ -50,6 +50,9 @@ def over? (board)
 end
 
 def winner(board)
-  winning_array = won?(board)
-  board[winning_array[0]] == "X" ?  "X" :   board[winning_array[0]] == "O" ? "O" : nil
+  if won?(board) != false
+    winning_array = won?(board)
+    board[winning_array[0]] == "X" ?  "X" : "O"
+  else
+    return nil
 end
