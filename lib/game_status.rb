@@ -15,12 +15,10 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 def won?(board)
-WIN_COMBINATIONS.each do |wining_array|
-  wining_array.each do |wining_idx|
-      board_idx = board.select do |curr_el|
-    position_taken?(board, wining_idx)== true && board[wining_idx] == "X"
-
+WIN_COMBINATIONS.each do |winning_array|
+  if board[winning_array[0]] == 'X' && board[winning_array[1]]== 'X' && board[winning_array[2]] == "X"
+    return winning_array
+  else
+    return  false
     end
-  end
-end
 end
