@@ -17,10 +17,7 @@ WIN_COMBINATIONS = [
 def won?(board)
 WIN_COMBINATIONS.each do |wining_array|
   wining_array.each do |wining_idx|
-  if position_taken?(board,wining_idx)
-      taken_x = board.select{|i| i == 'X'}
-      puts taken_x
-  end
+    puts board[wining_idx]
   end
 end
 end
