@@ -19,7 +19,7 @@ WIN_COMBINATIONS.each do |wining_array|
   wining_array.each do |wining_idx|
       board_idx = board.select do |curr_el|
     position_taken?(board, wining_idx)== true && board[wining_idx] == "X"
-    return board_idx
+
     end
   end
 end
