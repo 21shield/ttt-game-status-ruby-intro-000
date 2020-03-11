@@ -55,4 +55,5 @@ def winner(board)
     board[winning_array[0]] == "X" ?  "X" : "O"
   else
     return nil
+  end
 end
