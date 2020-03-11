@@ -51,5 +51,5 @@ end
 
 def winner(board)
   winning_array = won?(board)
-  board[winning_array[0]] == "X" ?  "X" :   "O"
+  board[winning_array[0]] == "X" ?  "X" :   board[winning_array[0]] == "O" ? "O" : nil
 end
