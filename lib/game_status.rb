@@ -53,6 +53,7 @@ def winner(board)
   #return x/o
   # winning array returns an array of idx
   winning_array = won?(board)
-  board[winning_array[0]] == "X" ?  "X" :   board[winning_array[0]] == "O" ? "O" : nil
-
+  board[winning_array[0]] == "X" ?  "X" :   "O"
+  if won?(board)== false
+    return nil
 end
