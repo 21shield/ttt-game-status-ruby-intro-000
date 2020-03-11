@@ -48,6 +48,4 @@ def over? (board)
   return false
 end
 
-def winner(board)
 
-end
