@@ -21,5 +21,6 @@ def won?(board)
     elsif board[winning_array[0]] == 'O' && board[winning_array[1]]== 'O' && board[winning_array[2]] == 'O'
       return winning_array
   end
-  return false
+    else
+      return false
 end
